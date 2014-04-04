@@ -61,16 +61,6 @@
 }
 
 /**
- * Placeholder
- * --------------------------------------------------------------------------
- */
-@mixin placeholder($color) {
-    &::-moz-placeholder           { color: $color; opacity: 1; }
-    &:-ms-input-placeholder       { color: $color; }
-    &::-webkit-input-placeholder  { color: $color; }
-}
-
-/**
  * Vendor Prefixer
  * --------------------------------------------------------------------------
  */
@@ -126,6 +116,16 @@
         }
     }
  }
+
+ /**
+ * Placeholder
+ * --------------------------------------------------------------------------
+ */
+@mixin placeholder($color) {
+    &::-moz-placeholder           { color: $color; opacity: 1; }
+    &:-ms-input-placeholder       { color: $color; }
+    &::-webkit-input-placeholder  { color: $color; }
+}
 
  /**
  * Media Query
