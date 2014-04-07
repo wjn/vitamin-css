@@ -61,7 +61,7 @@
  * Notice, I redifine the ".button" class giving it a default sizing.
  */
 .button {
-    font-size: $base-font-size;
+    font-size: $font-size-base;
     padding: $spacing-unit-half $spacing-unit-base*2;
 }
 .button--small {}
