@@ -34,8 +34,8 @@ $close-quote:   			null;
  * If you need non-English quotes, please alter the following values accordingly:
  */
 @if $english-quotes != true{
-    $open-quote:    		\00AB;
-    $close-quote:   		\00BB;
+	$open-quote:    		\00AB;
+	$close-quote:   		\00BB;
 }
 
 /**
