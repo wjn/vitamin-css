@@ -1,15 +1,13 @@
 /**
  * $RESET
- * ==========================================================================
- * An extended reset beyond normalize that clears more default browser 
- * stylings in order to provide a truely clean slate. I highly recommend 
- * reading through normalize, so you have a good understanding of everything
- * it effects.
+ * =============================================================================
+ * An extended reset, beyond normalize, that clears more browser defaults in
+ * order to provide a truely clean slate.
  */
 
 /**
- * Shared Reset
- * --------------------------------------------------------------------------
+ * Shared
+ * -----------------------------------------------------------------------------
  * Reset margins and paddings on all base html elements, as we define margins
  * ourselves with @base-spacing-unit in the base config file, padding else
  * where as needed.
@@ -25,8 +23,8 @@ hr {
 }
 
 /**
- * Horizontal Rule Reset
- * --------------------------------------------------------------------------
+ * Horizontal Rule
+ * -----------------------------------------------------------------------------
  * Horizontal rules by default are an element with no height, "border-top:#000"
  * and "border-bottom:#fff". We remove the white border for a cleaner "flat"
  * look.
@@ -36,8 +34,8 @@ hr {
 }
 
 /**
- * Iframe Reset
- * --------------------------------------------------------------------------
+ * Iframe
+ * -----------------------------------------------------------------------------
  * Remove default borders on iframe, as it just makes for a
  * cleaner default.
  */
@@ -46,8 +44,8 @@ iframe {
 }
 
 /**
- * Fieldset Reset
- * --------------------------------------------------------------------------
+ * Fieldset
+ * -----------------------------------------------------------------------------
  * 1. Ensure it behaves more like a standard block element.
  * 2. Remove border for a cleaner defualt.
  */
