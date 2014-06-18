@@ -1,7 +1,9 @@
 /**
  * $SCAFFOLDING
- * =============================================================================
- * Base styles added to all elements (*) or the <html> and <body> tags.
+ * ==========================================================================
+ * Here are any base styles added to all elements (*), <html> or <body>.
+ * If adding a background image or color to the body, I'd suggest doing
+ * that here as well.
  */
 
 html {
@@ -11,7 +13,7 @@ html {
 }
 
 body {
-    /* Body styles */
+    /* Body Styles */
 }
 
 @if $border-box-global == true {

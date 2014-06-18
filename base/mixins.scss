@@ -1,27 +1,27 @@
 /**
  * $MIXINS
- * =============================================================================
- * The Vitamin CSS Mixins Library.
+ * ==========================================================================
+ * A handful of some very vital and helpful mixins for Vitamin CSS.
  */
 
 /**
  * Clearfix
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
 @mixin clearfix() {
-    &:before,
-    &:after {
-        content: " "; // 1
-        display: table; // 2
-    }
-    &:after {
-        clear: both;
-    }
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
 }
 
 /**
  * Font Size
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
 @mixin font-size($font-size, $line-height:true) {
     font-size:$font-size;
@@ -33,7 +33,7 @@
 
 /**
  * Headings
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
 @mixin headings($from: 1, $to: 6) {
     %base-heading {
@@ -50,7 +50,7 @@
 
 /**
  * Unstyled Lists
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
 @mixin list-reset($margin-bottom:false) {
     list-style: none;
@@ -62,19 +62,19 @@
 
 /**
  * Vendor Prefixer
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
 @mixin vendor($property, $value...) {
     -webkit-#{$property}:$value;
-    -moz-#{$property}:$value;
-    -ms-#{$property}:$value;
-    -o-#{$property}:$value;
-    #{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
 }
 
 /**
  * Animation Prefixer
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
 @mixin keyframe($animation-name) {
     @-webkit-keyframes $animation-name {
@@ -100,7 +100,7 @@
 
 /**
  * Animation Prefixer
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
  @mixin inverse-content {
     color: #fff;
@@ -119,7 +119,7 @@
 
  /**
  * Placeholder
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
 @mixin placeholder($color) {
     &::-moz-placeholder           { color: $color; opacity: 1; }
@@ -129,25 +129,16 @@
 
  /**
  * Media Query
- * -----------------------------------------------------------------------------
+ * --------------------------------------------------------------------------
  */
 @mixin media-query($media-query){
     @if $media-query == palm {
-        @media only screen and (max-width:$palm-end) { @content; }
-    }
-    @if $media-query == lap {
-        @media only screen and (min-width:$lap-start) and (max-width:$lap-end) { @content; }
-    }
-    @if $media-query == lap-and-up {
-        @media only screen and (min-width:$lap-start) { @content; }
+        @media only screen and (max-width:$palm-start) { @content; }
     }
     @if $media-query == portable {
-        @media only screen and (max-width:$lap-end) { @content; }
+        @media only screen and (max-width:$portable-start) { @content; }
     }
     @if $media-query == desk {
-        @media only screen and (min-width:$desk-start) { @content; }
-    }
-    @if $media-query == desk-wide {
-        @media only screen and (min-width: $desk-wide-start) { @content; }
+        @media only screen and (min-width:$portable-start) { @content; }
     }
 }
