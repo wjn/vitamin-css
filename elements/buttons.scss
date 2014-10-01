@@ -22,17 +22,17 @@
  * like shown in the above examples.
  */
 .button {
- 	display: inline-block;				          
+ 	display: inline-block;
  	border: none;
- 	margin: 0; 
- 	white-space: nowrap; 				          
- 	font-family: inherit;				          
-    line-height: normal;				          
-    text-decoration: none;				          
-    text-align: center; 				          
-    vertical-align: middle;				          
-    cursor: pointer;					          
-    @include vendor(user-select, none);    
+ 	margin: 0;
+ 	white-space: nowrap;
+ 	font-family: inherit;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    @include vendor(user-select, none);
 
     /* UI States */
     &:hover,
@@ -58,14 +58,14 @@
  * --------------------------------------------------------------------------
  * Place your button size modifiers here. Below are a few examples of some
  * modifiers that I use, but feel free to delete these and create your own.
- * Notice, I redifine the ".button" class giving it a default sizing.
+ * Notice, I redifine the ".button" class giving it a default size.
  */
 .button {
     font-size: $font-size-base;
     padding: $spacing-unit-half $spacing-unit-base*2;
 }
 .button--small {}
-.button--large {} 
+.button--large {}
 .button--fluid {}
 
  /**
@@ -83,7 +83,7 @@
  * Place styles in the same fashion as button sizes here for various generic
  * button styles, of which might include base ui colors you set in the base
  * "_variables.scss" file. Again, below is a common way I would go about it, but
- * feel free to delete this and create your own. Notice, I redifine the 
+ * feel free to delete this and create your own. Notice, I redifine the
  * ".button" class giving it a default aesthetics.
  */
 .button {

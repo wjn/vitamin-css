@@ -8,12 +8,12 @@
 
 html {
     font: #{($font-size-base/16px)*1em}/#{$line-height-ratio} $font-family-base;
-    overflow-y:scroll;
-    min-height:100%;
+    overflow-y: scroll;
+    min-height: 100%;
 }
 
 body {
-    /* Body Styles */
+    // Body Styles
 }
 
 @if $border-box-global == true {
@@ -22,16 +22,6 @@ body {
         &:before,
         &:after {
             @include vendor(box-sizing, border-box);
-        }
-    }
-}
-
-@if $position-relative-global == true {
-    * {
-        &,
-        &:before,
-        &:after {
-            position: relative;
         }
     }
 }
